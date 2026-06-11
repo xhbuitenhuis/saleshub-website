@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" role="img" aria-labelledby="title">
+  <title id="title">The Sales Hub</title>
+  <defs>
+    <linearGradient id="salesHubBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0999ef"/>
+      <stop offset="1" stop-color="#0069d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="760" height="240" fill="none"/>
+  <g fill="url(#salesHubBlue)">
+    <path d="M82 24h126v110l42 42h58v48H221l-42-88V76h-68v60l-42 88H-18v-48h58l42-42V24z"/>
+    <text x="330" y="154" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="900" letter-spacing="0">The Sales Hub</text>
+  </g>
+</svg>
