@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sales Hub - Salarischeck</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- =========================================================
+AANPASSEN: salarischeck.html
+Gebruik Ctrl+F en zoek op 'AANPASSEN' om alle bewerkbare tekstblokken te vinden.
+Pas vooral tekst tussen <h1>, <h2>, <h3>, <p>, <li> en knoppen (<a>) aan.
+Laat class="", href="", script- en link-tags zoveel mogelijk staan.
+========================================================= -->
+
+  <!-- AANPASSEN: NAVIGATIE / MENU
+Hieronder staan het logo, de bedrijfsnaam en de menulinks.
+Wil je een menunaam wijzigen? Pas alleen de zichtbare tekst tussen <a>...</a> aan.
+Wil je een link wijzigen? Pas dan href="..." aan, maar laat de bestandsnamen kloppen.
+-->
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="The Sales Hub logo" />
+        <span>The Sales Hub</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="verwachtingen.html">Wat jij kunt verwachten</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="franchise-starten.html">Franchise starten</a>
+        <a href="salarischeck.html">Salarischeck</a>
+        <a href="contact.html">Contact</a>
+        <a href="solliciteren.html" class="nav-apply">Solliciteren</a>
+
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+  <main>
+
+<!-- AANPASSEN: PAGINA INTRO - SALARISCHECK
+Hier wijzig je de uitleg over verdienen, dagvergoeding en bonussen.
+-->
+<section class="page-hero">
+  <div class="container hero-narrow">
+    <span class="eyebrow">Salarischeck</span>
+    <h1>Check wat jij ongeveer kunt verdienen</h1>
+    <p>Vul hieronder een paar gegevens in voor een indicatie. Dit is geen garantie, maar geeft je wel een realistisch beeld van wat mogelijk is.</p>
+  </div>
+</section>
+<!-- AANPASSEN: SALARISCHECK FORMULIER
+De berekening zelf staat in script.js. Teksten rondom het formulier kun je hier aanpassen.
+-->
+<section class="section">
+  <div class="container two-column align-start">
+    <div class="calculator-box">
+      <h2>Jouw indicatie</h2>
+      <form id="salaryForm" class="salary-form">
+        <label>Leeftijd
+          <select id="age"><option value="16">16-17</option><option value="18">18-20</option><option value="21">21+</option></select>
+        </label>
+        <label>Dagen per week
+          <select id="days"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
+        </label>
+        <label>Prestatie-niveau
+          <select id="level"><option value="0">Startend</option><option value="15">Gemiddeld</option><option value="35">Sterk</option></select>
+        </label>
+        <button type="submit" class="btn btn-primary">Bereken indicatie</button>
+      </form>
+    </div>
+    <div class="result-box" id="salaryResult">
+      <h3>Voorbeeldresultaat</h3>
+      <p>Kies je gegevens en klik op berekenen.</p>
+      <div class="result-numbers">
+        <div><span>Per dag</span><strong>€ --</strong></div>
+        <div><span>Per week</span><strong>€ --</strong></div>
+        <div><span>Per maand</span><strong>€ --</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="container card-grid three">
+    <article class="info-card"><h3>Basisvergoeding</h3><p>Je start met een vaste vergoeding per dag. Die hangt onder meer samen met leeftijd en ervaring.</p></article>
+    <article class="info-card"><h3>Bonussen</h3><p>Goede prestaties worden beloond. Hoe consistenter je scoort, hoe interessanter je inkomen kan worden.</p></article>
+    <article class="info-card"><h3>Flexibele inzet</h3><p>Doordat je zelf kunt plannen, bepaal je ook mede hoeveel je uiteindelijk verdient per week of maand.</p></article>
+  </div>
+</section>
+<section class="section final-banner">
+  <div class="container center-text"><h2>Zin om het echt te ontdekken?</h2><p>De snelste manier om te zien of dit bij je past, is gewoon solliciteren.</p><a href="solliciteren.html" class="btn btn-cta">Direct solliciteren</a></div>
+</section>
+
+  </main>
+  <!-- AANPASSEN: FOOTER
+Hier wijzig je bedrijfsnaam, korte footertekst, contactgegevens en footerlinks.
+-->
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <img src="images/logo.png" alt="The Sales Hub logo" />
+          <span>The Sales Hub</span>
+        </a>
+        <p class="footer-text">Een energieke salesorganisatie voor jongeren die willen verdienen, groeien en plezier willen maken in hun werk.</p>
+      </div>
+      <div>
+        <h4>Navigatie</h4>
+        <a href="verwachtingen.html">Wat jij kunt verwachten</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="franchise-starten.html">Franchise starten</a>
+        <a href="salarischeck.html">Salarischeck</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Haarlemmerweg 319D<br>1051 LG Amsterdam</p>
+        <p>info@thesaleshub.nl<br>+31 20 532 2531</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> The Sales Hub</span>
+      <a href="solliciteren.html">Direct solliciteren</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

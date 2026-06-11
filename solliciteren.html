@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sales Hub - Solliciteren</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- =========================================================
+AANPASSEN: solliciteren.html
+Gebruik Ctrl+F en zoek op 'AANPASSEN' om alle bewerkbare tekstblokken te vinden.
+Pas vooral tekst tussen <h1>, <h2>, <h3>, <p>, <li> en knoppen (<a>) aan.
+Laat class="", href="", script- en link-tags zoveel mogelijk staan.
+========================================================= -->
+
+  <!-- AANPASSEN: NAVIGATIE / MENU
+Hieronder staan het logo, de bedrijfsnaam en de menulinks.
+Wil je een menunaam wijzigen? Pas alleen de zichtbare tekst tussen <a>...</a> aan.
+Wil je een link wijzigen? Pas dan href="..." aan, maar laat de bestandsnamen kloppen.
+-->
+<header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="The Sales Hub logo" />
+        <span>The Sales Hub</span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="verwachtingen.html">Wat jij kunt verwachten</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="franchise-starten.html">Franchise starten</a>
+        <a href="salarischeck.html">Salarischeck</a>
+        <a href="contact.html">Contact</a>
+        <a href="solliciteren.html" class="nav-apply">Solliciteren</a>
+
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+  <main>
+
+<!-- AANPASSEN: SOLLICITATIEPAGINA HERO + FORMULIER
+Hier pas je de titel, voordelen en velden van het sollicitatieformulier aan.
+Laat required/select/input zoveel mogelijk staan als je niet zeker weet wat het doet.
+-->
+<section class="hero hero-apply">
+  <div class="container hero-grid apply-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Solliciteren</span>
+      <h1>Solliciteer binnen 1 minuut</h1>
+      <p class="lead">Laat je gegevens achter en we nemen snel contact met je op om te kijken welke locatie en rol het beste bij je past.</p>
+      <ul class="tick-list big-ticks">
+        <li>Goed salaris en bonusmogelijkheden</li>
+        <li>Flexibel in te plannen naast studie of sport</li>
+        <li>Leuke collega’s en snelle doorgroeikansen</li>
+      </ul>
+    </div>
+    <div class="apply-card large-form">
+      <h2>Direct solliciteren</h2>
+      <p>Vul het formulier in en wij bellen of appen je zo snel mogelijk terug.</p>
+      <!-- AANPASSEN: NETLIFY FORMULIER
+Dit formulier is klaargezet voor Netlify Forms.
+Inzendingen verschijnen straks in Netlify > jouw site > Forms.
+Voor koppeling met Google Sheets kun je daarna Netlify Forms koppelen via Zapier of Make.
+Laat name="sollicitatie", method="POST", data-netlify="true" en form-name staan.
+-->
+<form name="sollicitatie" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="generic-form netlify-form">
+        <input type="hidden" name="form-name" value="sollicitatie" />
+
+        <p class="hidden">
+          <label>Laat dit leeg: <input name="bot-field" /></label>
+        </p>
+
+        <div class="inline-fields">
+          <input type="text" name="voornaam" placeholder="Voornaam" required />
+          <input type="text" name="achternaam" placeholder="Achternaam" required />
+        </div>
+
+        <input type="email" name="email" placeholder="E-mailadres" required />
+        <input type="tel" name="telefoon" placeholder="Telefoonnummer" required />
+
+        <select name="leeftijd" required>
+          <option value="">Leeftijd</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23+</option>
+        </select>
+
+        <button type="submit" class="btn btn-cta">Verzenden</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- AANPASSEN: VOORDELEN OP SOLLICITATIEPAGINA
+Hier staan korte redenen om te solliciteren.
+-->
+<section class="section section-soft">
+  <div class="container card-grid four">
+    <article class="info-card"><h3>Jong team</h3><p>Je werkt in een omgeving waar energie en onderlinge gezelligheid altijd voelbaar zijn.</p></article>
+    <article class="info-card"><h3>Flexibiliteit</h3><p>Plan jezelf in op dagen die voor jou uitkomen en houd ruimte voor studie of andere plannen.</p></article>
+    <article class="info-card"><h3>Training</h3><p>Je leert hoe je gesprekken voert, mensen enthousiast maakt en sterker wordt in communicatie.</p></article>
+    <article class="info-card"><h3>Doorgroei</h3><p>Laat je zien wat je kunt, dan kun je doorgroeien naar captain, trainer of manager.</p></article>
+  </div>
+</section>
+<section class="section">
+  <div class="container two-column align-center">
+    <div>
+      <span class="eyebrow">Zo werkt het</span>
+      <h2>Van aanmelding naar eerste werkdag</h2>
+      <p>Na je aanmelding nemen we contact met je op. We bespreken je wensen, beantwoorden je vragen en kijken welke locatie of rol het beste past.</p>
+      <ul class="tick-list">
+        <li>Aanmelding via het formulier</li>
+        <li>Korte kennismaking via telefoon of WhatsApp</li>
+        <li>Eventueel gesprek of meeloopmoment</li>
+        <li>Starten met begeleiding en training</li>
+      </ul>
+    </div>
+    <div class="single-image-card"><img src="images/gallery-2.jpg" alt="Kennismaking en team" /></div>
+  </div>
+</section>
+<section class="section final-banner">
+  <div class="container center-text"><h2>Twijfel je nog?</h2><p>Neem gerust contact met ons op. We vertellen je graag meer over de mogelijkheden.</p><a href="contact.html" class="btn btn-secondary light-btn">Contact opnemen</a></div>
+</section>
+
+  </main>
+  <!-- AANPASSEN: FOOTER
+Hier wijzig je bedrijfsnaam, korte footertekst, contactgegevens en footerlinks.
+-->
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand">
+          <img src="images/logo.png" alt="The Sales Hub logo" />
+          <span>The Sales Hub</span>
+        </a>
+        <p class="footer-text">Een energieke salesorganisatie voor jongeren die willen verdienen, groeien en plezier willen maken in hun werk.</p>
+      </div>
+      <div>
+        <h4>Navigatie</h4>
+        <a href="verwachtingen.html">Wat jij kunt verwachten</a>
+        <a href="over-ons.html">Over ons</a>
+        <a href="franchise-starten.html">Franchise starten</a>
+        <a href="salarischeck.html">Salarischeck</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Haarlemmerweg 319D<br>1051 LG Amsterdam</p>
+        <p>info@thesaleshub.nl<br>+31 20 532 2531</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> The Sales Hub</span>
+      <a href="solliciteren.html">Direct solliciteren</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
