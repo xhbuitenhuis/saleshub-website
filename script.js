@@ -4,6 +4,11 @@
 // Alleen de alert-teksten of salarischeck-bedragen kun je eventueel aanpassen.
 // =========================================================
 
+const brandLogoPath = 'images/logo-mark.svg';
+document.querySelectorAll('.brand img').forEach((logo) => {
+  logo.src = brandLogoPath;
+  logo.alt = 'The Sales Hub logo';
+});
 
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
