@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440" role="img" aria-labelledby="title">
-  <title>The Sales Hub logo mark</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 560" role="img" aria-labelledby="title">
+  <title>The Sales Hub logo</title>
   <defs>
-    <linearGradient id="salesHubBlue" x1="42" y1="390" x2="396" y2="52" gradientUnits="userSpaceOnUse">
+    <linearGradient id="salesHubBlue" x1="70" y1="500" x2="900" y2="70" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#0072E5"/>
       <stop offset="1" stop-color="#18A8F2"/>
     </linearGradient>
   </defs>
-  <path fill="url(#salesHubBlue)" d="M160 36h180v214l46 46h114v70H348l-54-116V104h-88v146L152 366H0v-70h114l46-46z"/>
+  <path fill="url(#salesHubBlue)" d="M470 42h180v214l46 46h114v70H658l-54-116V110h-88v146l-54 116H310v-70h114l46-46z"/>
+  <text x="560" y="512" text-anchor="middle" fill="url(#salesHubBlue)" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="136" font-weight="900" letter-spacing="0">The Sales Hub</text>
 </svg>
