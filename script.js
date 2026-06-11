@@ -8,9 +8,9 @@
 document.querySelectorAll('.brand img[src="images/logo.png"]').forEach((logo) => {
   const isHeaderLogo = Boolean(logo.closest('.site-header'));
   logo.src = 'images/logo-wordmark.svg';
-  logo.style.width = isHeaderLogo ? '260px' : '230px';
-  logo.style.height = isHeaderLogo ? '62px' : '58px';
-  logo.style.maxWidth = isHeaderLogo ? '64vw' : '100%';
+  logo.style.width = isHeaderLogo ? '300px' : '240px';
+  logo.style.height = isHeaderLogo ? '64px' : '58px';
+  logo.style.maxWidth = isHeaderLogo ? '66vw' : '100%';
   logo.style.borderRadius = '0';
   logo.style.objectFit = 'contain';
 });
