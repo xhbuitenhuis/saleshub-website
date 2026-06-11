@@ -5,19 +5,6 @@
 // =========================================================
 
 
-document.querySelectorAll('.brand img[src="images/logo.png"]').forEach((logo) => {
-  const isHeaderLogo = Boolean(logo.closest('.site-header'));
-  logo.src = 'images/logo-wordmark.svg';
-  logo.style.width = 'auto';
-  logo.style.height = isHeaderLogo ? '64px' : '58px';
-  logo.style.maxWidth = isHeaderLogo ? '150px' : '140px';
-  logo.style.borderRadius = '0';
-  logo.style.objectFit = 'contain';
-});
-document.querySelectorAll('.brand span').forEach((label) => {
-  label.style.display = 'none';
-});
-
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
 if (menuToggle && mainNav) {
