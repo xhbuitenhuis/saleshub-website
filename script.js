@@ -5,12 +5,17 @@
 // =========================================================
 
 const brandLogoPath = 'images/logo-mark.svg';
-document.querySelectorAll('.brand img').forEach((logo) => {
-  logo.src = brandLogoPath;
-  logo.alt = 'The Sales Hub logo';
-  logo.style.width = logo.closest('.footer-brand') ? '60px' : '68px';
-  logo.style.height = logo.closest('.footer-brand') ? '52px' : '56px';
-  logo.style.objectFit = 'contain';
+document.querySelectorAll('.brand').forEach((brand) => {
+  const logo = brand.querySelector('img');
+  const label = brand.querySelector('span');
+  if (logo) {
+    logo.src = brandLogoPath;
+    logo.alt = 'The Sales Hub logo';
+    logo.style.width = brand.classList.contains('footer-brand') ? '190px' : '210px';
+    logo.style.height = 'auto';
+    logo.style.objectFit = 'contain';
+  }
+  if (label) label.style.display = 'none';
 });
 
 const menuToggle = document.getElementById('menuToggle');
