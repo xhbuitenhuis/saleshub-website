@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 220" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 136" role="img" aria-labelledby="title">
   <title id="title">The Sales Hub</title>
   <defs>
     <linearGradient id="salesHubBlue" x1="0" y1="0" x2="1" y2="1">
@@ -6,9 +6,9 @@
       <stop offset="1" stop-color="#006ed8"/>
     </linearGradient>
   </defs>
-  <rect width="1040" height="220" fill="none"/>
+  <rect width="260" height="136" fill="none"/>
   <g fill="url(#salesHubBlue)">
-    <path d="M72 30h116v96l42 42h58v46h-88l-40-84V76h-60v54l-40 84H0v-46h24l48-48V30z"/>
-    <text x="320" y="143" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="900">The Sales Hub</text>
+    <path d="M105 8h50v46l18 18h34v24h-55l-17-37V31h-10v28l-17 37H53V72h34l18-18V8z"/>
+    <text x="130" y="125" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="900">The Sales Hub</text>
   </g>
 </svg>
