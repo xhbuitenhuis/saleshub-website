@@ -5,31 +5,16 @@
 // =========================================================
 
 
-const headerLogoStyle = document.createElement('style');
-headerLogoStyle.textContent = `
-  .site-header .brand {
-    gap: 0;
-    flex: 0 0 auto;
-  }
-  .site-header .brand::before {
-    content: "";
-    display: block;
-    width: 184px;
-    height: 58px;
-    background: url("images/logo-wordmark.svg") center / contain no-repeat;
-  }
-  .site-header .brand img,
-  .site-header .brand span {
-    display: none;
-  }
-  @media (max-width: 580px) {
-    .site-header .brand::before {
-      width: 148px;
-      height: 48px;
-    }
-  }
-`;
-document.head.appendChild(headerLogoStyle);
+document.querySelectorAll('.brand img[src="images/logo.png"]').forEach((logo) => {
+  logo.src = 'images/logo-wordmark.svg';
+  logo.style.width = logo.closest('.site-header') ? '184px' : '170px';
+  logo.style.height = logo.closest('.site-header') ? '58px' : '54px';
+  logo.style.borderRadius = '0';
+  logo.style.objectFit = 'contain';
+});
+document.querySelectorAll('.brand span').forEach((label) => {
+  label.style.display = 'none';
+});
 
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
