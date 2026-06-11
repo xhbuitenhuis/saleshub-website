@@ -5,6 +5,32 @@
 // =========================================================
 
 
+const headerLogoStyle = document.createElement('style');
+headerLogoStyle.textContent = `
+  .site-header .brand {
+    gap: 0;
+    flex: 0 0 auto;
+  }
+  .site-header .brand::before {
+    content: "";
+    display: block;
+    width: 184px;
+    height: 58px;
+    background: url("images/logo-wordmark.svg") center / contain no-repeat;
+  }
+  .site-header .brand img,
+  .site-header .brand span {
+    display: none;
+  }
+  @media (max-width: 580px) {
+    .site-header .brand::before {
+      width: 148px;
+      height: 48px;
+    }
+  }
+`;
+document.head.appendChild(headerLogoStyle);
+
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
 if (menuToggle && mainNav) {
