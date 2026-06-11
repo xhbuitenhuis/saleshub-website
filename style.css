@@ -161,7 +161,6 @@ h3 { font-size: 24px; }
 .step-card span {
   width: 46px; height: 46px; display: inline-grid; place-items: center; border-radius: 50%; background: var(--primary-soft); color: var(--primary-dark); font-weight: 900; margin-bottom: 14px;
 }
-stats-band { background: var(--primary); color: var(--white); padding: 34px 0; }
 .stats-band { background: var(--primary); color: var(--white); padding: 34px 0; }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; }
 .stats-grid strong { display: block; font-size: clamp(32px, 4vw, 56px); line-height: 1; margin-bottom: 8px; }
@@ -185,6 +184,9 @@ stats-band { background: var(--primary); color: var(--white); padding: 34px 0; }
 
 .generic-form, .salary-form { display: grid; gap: 14px; }
 .generic-form input, .generic-form select, .generic-form textarea,
+salary-form select, .salary-form input, .salary-form textarea {
+  width: 100%; border: 1px solid var(--line); background: #fbfdff; min-height: 56px; padding: 14px 16px; border-radius: 16px; font: inherit; color: var(--text);
+}
 .salary-form select, .salary-form input, .salary-form textarea {
   width: 100%; border: 1px solid var(--line); background: #fbfdff; min-height: 56px; padding: 14px 16px; border-radius: 16px; font: inherit; color: var(--text);
 }
@@ -290,34 +292,35 @@ Niet verwijderen als je Netlify Forms gebruikt.
   display: none !important;
 }
 
-/* Logo verhouding corrigeren */
-.site-header .brand {
-  flex: 0 0 150px;
-  width: 150px;
-  min-width: 150px;
-}
-.site-header .brand img {
+/* Logo layout */
+.site-header .brand,
+.footer-brand {
+  flex: 0 0 auto;
   width: auto;
-  height: 64px;
-  max-width: 150px;
-  border-radius: 0;
-  object-fit: contain;
+  min-width: 0;
+  gap: 10px;
 }
+.site-header .brand img,
 .footer-brand img {
-  width: auto;
-  height: 58px;
-  max-width: 140px;
+  width: 52px;
+  height: 52px;
+  max-width: none;
   border-radius: 0;
   object-fit: contain;
+}
+.site-header .brand span,
+.footer-brand span {
+  display: inline;
+  color: var(--primary-dark);
+  font-weight: 900;
+  white-space: nowrap;
 }
 @media (max-width: 580px) {
-  .site-header .brand {
-    flex-basis: 122px;
-    width: 122px;
-    min-width: 122px;
-  }
   .site-header .brand img {
-    height: 56px;
-    max-width: 122px;
+    width: 44px;
+    height: 44px;
+  }
+  .site-header .brand span {
+    font-size: 17px;
   }
 }
