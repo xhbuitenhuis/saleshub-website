@@ -307,9 +307,9 @@ Niet verwijderen als je Netlify Forms gebruikt.
 }
 .site-header .brand img,
 .footer-brand img {
-  width: 52px;
-  height: 52px;
-  max-width: none;
+  width: 160px;
+  height: auto;
+  max-width: 160px;
   border-radius: 0;
   object-fit: contain;
 }
@@ -322,8 +322,8 @@ Niet verwijderen als je Netlify Forms gebruikt.
 }
 @media (max-width: 580px) {
   .site-header .brand img {
-    width: 44px;
-    height: 44px;
+    width: 120px;
+    height: auto;
   }
 
 .site-header .brand img {
