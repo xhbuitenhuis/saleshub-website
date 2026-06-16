@@ -322,26 +322,10 @@ Niet verwijderen als je Netlify Forms gebruikt.
 }
 @media (max-width: 580px) {
   .site-header .brand img {
-    width: 120px;
+    width: 200px;
     height: auto;
   }
-
-.site-header .brand img {
-  width: 160px !important;
-  height: auto !important;
-  max-width: 160px !important;
-  min-width: 160px !important;
-  object-fit: contain !important;
-  border-radius: 0 !important;
-}
-
-.footer-brand img {
-  width: 120px !important;
-  height: auto !important;
-  max-width: 120px !important;
-  object-fit: contain !important;
-}
-  .site-header .brand span {
+eader .brand span {
     font-size: 17px;
   }
 }
