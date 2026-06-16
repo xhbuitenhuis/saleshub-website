@@ -399,13 +399,6 @@ eader .brand span {
   ) !important;
 }
 
-.section {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #f8fdff 100%
-  );
-}
 
 .section-soft {
   background: linear-gradient(
@@ -415,7 +408,22 @@ eader .brand span {
     #ffffff 100%
   ) !important;
 }
+/* Review-sectie terug donker maken */
+.section-dark {
+  background: #0b1d2a !important;
+}
 
+.section-dark h2,
+.section-dark h3,
+.section-dark p,
+.section-dark strong {
+  color: #ffffff !important;
+}
+
+.section-dark .eyebrow {
+  color: #1678a7 !important;
+  background: #ffffff !important;
+}
 .hero + .section {
   background: linear-gradient(
     180deg,
