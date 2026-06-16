@@ -309,7 +309,7 @@ Niet verwijderen als je Netlify Forms gebruikt.
 .footer-brand img {
   width: 280px;
   height: auto;
-  max-width: 160px;
+  max-width: 280px;
   border-radius: 0;
   object-fit: contain;
 }
