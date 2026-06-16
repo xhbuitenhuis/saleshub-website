@@ -320,6 +320,21 @@ Niet verwijderen als je Netlify Forms gebruikt.
     width: 44px;
     height: 44px;
   }
+
+  /* Logo groter maken */
+.site-header .brand img {
+  width: 120px !important;
+  height: auto !important;
+  max-width: 120px !important;
+  object-fit: contain !important;
+}
+
+.footer-brand img {
+  width: 120px !important;
+  height: auto !important;
+  max-width: 120px !important;
+  object-fit: contain !important;
+}
   .site-header .brand span {
     font-size: 17px;
   }
