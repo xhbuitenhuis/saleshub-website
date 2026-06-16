@@ -77,6 +77,21 @@ h3 { font-size: 24px; }
     radial-gradient(circle at 30% 85%, rgba(22, 120, 167, 0.08) 0%, transparent 26%),
     linear-gradient(135deg, #f9fcfe 0%, #eef7fb 45%, #e8f6fc 100%);
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 75% 30%, rgba(255, 255, 255, 0.55) 0%, transparent 22%),
+    radial-gradient(circle at 20% 75%, rgba(255, 255, 255, 0.35) 0%, transparent 18%);
+  pointer-events: none;
+  z-index: 0;
+}
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
 .hero-home { padding: 54px 0 62px; }
 .hero-apply { padding: 78px 0 84px; }
 .hero-grid {
