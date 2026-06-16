@@ -50,7 +50,12 @@ h3 { font-size: 24px; }
 .brand {
   display: inline-flex; align-items: center; gap: 12px; font-weight: 800; font-size: 20px; color: var(--heading);
 }
-.brand img { width: 44px; height: 44px; border-radius: 14px; }
+.brand img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
 .main-nav { display: flex; align-items: center; gap: 24px; font-weight: 700; }
 .main-nav a { color: var(--text); }
 .main-nav a:hover { color: var(--primary-dark); }
@@ -321,12 +326,13 @@ Niet verwijderen als je Netlify Forms gebruikt.
     height: 44px;
   }
 
-  /* Logo groter maken */
 .site-header .brand img {
-  width: 120px !important;
+  width: 160px !important;
   height: auto !important;
-  max-width: 120px !important;
+  max-width: 160px !important;
+  min-width: 160px !important;
   object-fit: contain !important;
+  border-radius: 0 !important;
 }
 
 .footer-brand img {
