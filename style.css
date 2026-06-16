@@ -69,10 +69,13 @@ h3 { font-size: 24px; }
 }
 
 .hero {
-  position: relative; overflow: hidden;
-  background: radial-gradient(circle at 18% 18%, rgba(36,161,218,.18), transparent 24%),
-              radial-gradient(circle at 90% 18%, rgba(18,180,77,.10), transparent 18%),
-              linear-gradient(180deg, #f9fcfe 0%, #eef7fb 100%);
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(36, 161, 218, 0.16) 0%, transparent 34%),
+    radial-gradient(circle at 85% 18%, rgba(36, 161, 218, 0.10) 0%, transparent 28%),
+    radial-gradient(circle at 30% 85%, rgba(22, 120, 167, 0.08) 0%, transparent 26%),
+    linear-gradient(135deg, #f9fcfe 0%, #eef7fb 45%, #e8f6fc 100%);
 }
 .hero-home { padding: 54px 0 62px; }
 .hero-apply { padding: 78px 0 84px; }
