@@ -474,3 +474,57 @@ eader .brand span {
     #ffffff 100%
   ) !important;
 }
+
+/* Benefits / waarom-sectie */
+.benefit-grid {
+  align-items: start;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 10px 24px;
+}
+
+.benefit-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 18px;
+  background: rgba(36, 161, 218, 0.10);
+}
+
+.benefit-card h3 {
+  max-width: 230px;
+  margin: 0 auto 18px;
+  font-size: 26px;
+  line-height: 1.05;
+  font-weight: 900;
+  color: #071b28;
+}
+
+.benefit-card p {
+  max-width: 280px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 400 !important;
+  color: #183243;
+}
+
+.benefit-card p strong {
+  font-weight: 400 !important;
+}
+
+@media (max-width: 840px) {
+  .benefit-card h3 {
+    font-size: 24px;
+  }
+
+  .benefit-card p {
+    font-size: 16px;
+  }
+}
