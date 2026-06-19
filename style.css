@@ -530,3 +530,29 @@ eader .brand span {
     font-size: 16px;
   }
 }
+.privacy-content {
+  max-width: 900px;
+}
+
+.privacy-content h2 {
+  font-size: 30px;
+  margin-top: 44px;
+  margin-bottom: 14px;
+}
+
+.privacy-content p,
+.privacy-content li {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #183243;
+}
+
+.privacy-content ul {
+  margin: 12px 0 24px;
+  padding-left: 24px;
+}
+
+.privacy-content a {
+  color: #1678a7;
+  font-weight: 700;
+}
