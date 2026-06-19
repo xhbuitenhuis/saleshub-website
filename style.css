@@ -500,9 +500,11 @@ eader .brand span {
 .benefit-card h3 {
   max-width: 230px;
   margin: 0 auto 18px;
-  font-size: 26px;
-  line-height: 1.05;
-  font-weight: 900;
+  font-size: 25px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-family: Arial, Helvetica, sans-serif;
   color: #071b28;
 }
 
