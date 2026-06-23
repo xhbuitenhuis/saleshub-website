@@ -556,3 +556,17 @@ eader .brand span {
   color: #1678a7;
   font-weight: 700;
 }
+
+/* Alleen mobiel: extra badge en onderste foto verbergen */
+@media (max-width: 768px) {
+  .hero-visual .floating-badge,
+  .hero-visual .income-badge,
+  .hero-visual .salary-badge,
+  .hero-visual .pill {
+    display: none !important;
+  }
+
+  .hero-visual img:nth-of-type(2) {
+    display: none !important;
+  }
+}
