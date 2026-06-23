@@ -602,3 +602,51 @@ eader .brand span {
     margin-top: 0 !important;
   }
 }
+
+/* MOBIEL: hero-foto netjes laten aansluiten zonder groot gat */
+@media screen and (max-width: 768px) {
+  .hero-home {
+    padding-bottom: 90px !important;
+  }
+
+  .hero-home .hero-grid {
+    gap: 34px !important;
+  }
+
+  .hero-home .hero-visual,
+  .hero-home .hero-visual-pop {
+    min-height: 0 !important;
+    height: auto !important;
+    margin-bottom: 0 !important;
+    display: block !important;
+  }
+
+  .hero-home .visual-badge,
+  .hero-home .secondary-photo,
+  .hero-home .hide-mobile {
+    display: none !important;
+  }
+
+  .hero-home .main-photo {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    right: auto !important;
+    top: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-home .main-photo img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+    border-radius: 28px !important;
+  }
+
+  .hero + .section {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
