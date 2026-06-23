@@ -650,3 +650,37 @@ eader .brand span {
     margin-top: 0 !important;
   }
 }
+
+/* DESKTOP: homepage hero groter maken zoals Good Wave */
+@media screen and (min-width: 841px) {
+  .hero-home {
+    padding-top: 105px !important;
+    padding-bottom: 150px !important;
+  }
+
+  .hero-home .hero-grid {
+    min-height: 620px !important;
+    align-items: center !important;
+  }
+
+  .hero-home .hero-copy {
+    transform: translateY(-10px);
+  }
+
+  .hero-home .hero-visual {
+    min-height: 560px !important;
+  }
+
+  .hero-home .main-photo {
+    height: 360px !important;
+  }
+
+  .hero-home .secondary-photo {
+    height: 290px !important;
+    bottom: 0 !important;
+  }
+
+  .hero + .section {
+    padding-top: 90px !important;
+  }
+}
