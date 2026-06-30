@@ -1,4 +1,21 @@
 // =========================================================
+// GOOGLE ADS TAG
+// Meet websitebezoeken en maakt conversietracking mogelijk.
+// De conversie zelf wordt alleen op bedankt.html afgevuurd.
+// =========================================================
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18254091758');
+
+(function () {
+  const googleTag = document.createElement('script');
+  googleTag.async = true;
+  googleTag.src = 'https://www.googletagmanager.com/gtag/js?id=AW-18254091758';
+  document.head.appendChild(googleTag);
+})();
+
+// =========================================================
 // AANPASSEN: JAVASCRIPT
 // Hier hoef je normaal niet aan te zitten.
 // Alleen de alert-teksten of salarischeck-bedragen kun je eventueel aanpassen.
